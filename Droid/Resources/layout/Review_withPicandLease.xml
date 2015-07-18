@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#DEDEDC"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/review_screen">
+    <TextView
+        android:text="Review"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleReviewerAccount"
+        android:textColor="#ff000000"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearMenuBar" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutImages"
+        android:layout_marginTop="75dp">
+        <ImageView
+            android:id="@+id/imgPerson"
+            android:scaleType="fitXY"
+            android:layout_width="190dp"
+            android:layout_height="150dp"
+            android:background="#ff2f2626"
+            android:src="@drawable/governmentId" />
+        <ImageView
+            android:id="@+id/imgLease"
+            android:scaleType="fitXY"
+            android:layout_width="190dp"
+            android:layout_height="150dp"
+            android:background="#ff2f2626"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/lease190x150" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutTenantsSin"
+        android:layout_marginTop="240dp">
+        <TextView
+            android:text="Tenant's SIN"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/txtTenantSinReviewScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#ff1e0e0e" />
+        <Space
+            android:id="@+id/spaceReviewScreen"
+            android:layout_width="35dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="### ### ###"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/numSinNumber"
+            android:textColor="#ff1d0f0f" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearLayoutYearsOfStay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+        <TextView
+            android:text="Tenant's Years of Stay"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/txtYearsOfStay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#ff1e0e0e" />
+        <Space
+            android:id="@+id/spaceYearsOfStay"
+            android:layout_width="35dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="14 months"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/numMonthsStayr"
+            android:textColor="#ff1d0f0f" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50.0dp"
+        android:layout_marginRight="0.0dp"
+        android:id="@+id/relativeLayoutRecommend">
+        <TextView
+            android:text="Not Recommended"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleNotRecommended"
+            android:layout_marginTop="315dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffe40000"
+            android:textSize="18dp" />
+        <TextView
+            android:text="Recommended"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleRecommended"
+            android:layout_marginTop="315dp"
+            android:layout_marginLeft="235dp"
+            android:textColor="#ff3fcb50"
+            android:textSize="18dp" />
+        <SeekBar
+            android:layout_width="336.1dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarRecommend"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="25dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginTop="390dp">
+            <Button
+                android:id="@+id/buttonSurvey"
+                android:text="Tenant Survey"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:height="70dp"
+                android:width="195dp"
+                android:paddingTop="2dp"
+                android:background="#7491A3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/buttonHome"
+                android:text="Submit"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:height="70dp"
+                android:width="195dp"
+                android:paddingTop="2dp"
+                android:background="@drawable/ButtonSignUpStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

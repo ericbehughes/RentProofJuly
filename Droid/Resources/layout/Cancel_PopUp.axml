@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#DEDEDC"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:id="@+id/cancel_screen">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutCancelText"
+        android:layout_below="@+id/linearMenuBar"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:text="Do you wish to cancel?"
+            android:textColor="#000"
+            android:id="@+id/txtCancelPopUp"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutCancelText2"
+        android:layout_below="@+id/layoutCancelText"
+        android:layout_marginTop="10dp">
+        <Button
+            android:text="Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonYesCancel"
+            android:layout_weight="1" />
+        <Button
+            android:text="No"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonNoCancel"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

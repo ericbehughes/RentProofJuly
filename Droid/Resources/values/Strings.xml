@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">RentProof</string>
+	<string name="openDrawer">Main Menu</string>
+	<string name="closeDrawer">Rent Proof</string>
+	<string name="my_profile">My Profile</string>
+	<string name="main_menu">Main Menu</string>
+	<string name="log_out">Logout</string>
+	<string name="drawer_faq">FAQ</string>
+	<string name="f_a_q_1">FAQ1</string>
+	<string name="f_a_q_2">FAQ2</string>
+	<string name="f_a_q_3">FAQ3</string>
+	<string name="f_a_q_4">FAQ4</string>
+	<string name="support">Support</string>
+	<string name="rentproof_summary">Rentproof Summary / Explanation</string>
+	<string name="tenant_search_summary">Tenant Search Summary / Explanation</string>
+	<string name="listings_summary">Listings Summary / Explanation</string>
+</resources>

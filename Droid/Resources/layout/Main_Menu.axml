@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#000"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- The Main Content View -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#DEDEDC"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/main_menu">
+            <TextView
+                android:text="Welcome,"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtWelcome"
+                android:textColor="#000"
+                android:layout_marginTop="5dp" />
+            <Button
+                android:id="@+id/buttonQuery"
+                android:text="Background Check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="80dp"
+                android:background="#000"
+                android:textColor="#fff" />
+            <Button
+                android:id="@+id/buttonMyQueries"
+                android:text="My Reports"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff" />
+            <Button
+                android:id="@+id/buttonReview"
+                android:text="My Reviews"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#000"
+                android:textColor="#fff" />
+            <Button
+                android:id="@+id/buttonMyProfile"
+                android:text="Tenant Search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                android:textColor="#fff" />
+        </LinearLayout>
+    <!-- Navigation Drawers -->
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="#818181"
+            android:dividerHeight="1dp"
+            android:background="#9E9E9E" />
+        <ListView
+            android:id="@+id/right_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:choiceMode="singleChoice"
+            android:divider="#E2E2E2"
+            android:dividerHeight="1dp"
+            android:background="#9E9E9E" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

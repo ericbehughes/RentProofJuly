@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DEDEDC"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/dialog_sign_up">
+<!-- The Main Content View -->
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:hint="Name"
+        android:textColorHint="#d3d3d3"
+        android:paddingLeft="10dp"
+        android:textColor="#000" />
+    <EditText
+        android:id="@+id/txtEmail"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email"
+        android:textColorHint="#d3d3d3"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        android:layout_below="@id/txtFirstName" />
+    <EditText
+        android:id="@+id/txtSecurityNumber"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Social Security Number"
+        android:textColorHint="#d3d3d3"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        android:layout_below="@+id/txtEmail" />
+    <EditText
+        android:id="@+id/txtPassword"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:textColorHint="#d3d3d3"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        android:layout_below="@+id/txtSecurityNumber" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutTermsAndConditions"
+        android:layout_below="@+id/txtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:text="I Agree To Terms and Conditions"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/titleTermsAndConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox1"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/txtPassword"
+        android:layout_marginTop="50dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <Button
+            android:id="@+id/popUpButton"
+            android:text="Sign Up!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:height="70dp"
+            android:paddingTop="2dp"
+            android:background="#7491A3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp" />
+    </RelativeLayout>
+<!-- Navigation Drawers -->
+</RelativeLayout>

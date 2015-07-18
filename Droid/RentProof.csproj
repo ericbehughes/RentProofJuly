@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{6B737455-5AA3-45DE-9AFA-643C5286CDC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TCheck.Droid</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>TCheck.Droid</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="MR.Gestures.Android">
+      <HintPath>..\packages\MR.Gestures.1.1.0\lib\MonoAndroid10\MR.Gestures.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="MR.Gestures">
+      <HintPath>..\packages\MR.Gestures.1.1.0\lib\MonoAndroid10\MR.Gestures.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="JudoPayDotNet">
+      <HintPath>..\packages\JudoPay.PCL.1.0.4\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\JudoPayDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android">
+      <HintPath>..\packages\Xamarin.Forms.1.4.3.6376\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsViewGroup">
+      <HintPath>..\packages\Xamarin.Forms.1.4.3.6376\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.1.4.3.6376\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.1.4.3.6376\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.1.4.3.6376\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\monoandroid\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\monoandroid\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation">
+      <HintPath>..\packages\FluentValidation.5.6.2.0\lib\portable-net45+wp80+win8+wpa81\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog">
+      <HintPath>..\packages\Serilog.1.5.8\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10\Serilog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Activities\swipe_activity.cs" />
+    <Compile Include="Activities\Main.cs" />
+    <Compile Include="Activities\ExpendListAdapter.cs" />
+    <Compile Include="Activities\Cancel_Activity.cs" />
+    <Compile Include="Activities\Login_Activity.cs" />
+    <Compile Include="Activities\Main_Menu_Activity.cs" />
+    <Compile Include="Activities\Queries_Activity.cs" />
+    <Compile Include="Activities\My_Reviews_Activity.cs" />
+    <Compile Include="Activities\NavigationBar.cs" />
+    <Compile Include="Activities\Query_Payment_Activity.cs" />
+    <Compile Include="Activities\Sample_Report.cs" />
+    <Compile Include="Activities\Sign_Up_Popup.cs" />
+    <Compile Include="Activities\Submit_Review_Activity.cs" />
+    <Compile Include="Activities\Submit_Survey_Activity.cs" />
+    <Compile Include="Activities\PhotoAlbum.cs" />
+    <Compile Include="Activities\ImageManager.cs" />
+    <Compile Include="Activities\CrewMemberItemViewHolder.cs" />
+    <Compile Include="Activities\AddReviews_Activity.cs" />
+    <Compile Include="Activities\BackgroundCheck.cs" />
+    <Compile Include="Activities\BackgroundCheck_List_Data.cs" />
+    <Compile Include="Activities\MyReports_Helper_MaybeDelete.cs" />
+    <Compile Include="Activities\BackgroundCheckRecyclerAdapter.cs" />
+    <Compile Include="Activities\BackgroundCheckProfile.cs" />
+    <Compile Include="Activities\Background_Report.cs" />
+    <Compile Include="Activities\Feature_PopUp.cs" />
+    <Compile Include="Activities\Tenant_Search.cs" />
+    <Compile Include="Activities\Support_PopUp.cs" />
+    <Compile Include="Activities\Tenant_Search2.cs" />
+    <Compile Include="Activities\Tenant_Search3.cs" />
+    <Compile Include="Activities\Purchase_Confirmation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable\ButtonSignInStyle.xml" />
+    <AndroidResource Include="Resources\drawable\ButtonSignUpStyle.xml" />
+    <AndroidResource Include="Resources\drawable\edit_text_style.xml" />
+    <AndroidResource Include="Resources\anim\slide_right.xml" />
+    <AndroidResource Include="Resources\anim\slide_up.xml" />
+    <AndroidResource Include="Resources\drawable\happyFace.jpg" />
+    <AndroidResource Include="Resources\layout\my_queries_screen.axml" />
+    <AndroidResource Include="Resources\drawable\governmentId.jpg" />
+    <AndroidResource Include="Resources\drawable\govID190x150.jpg" />
+    <AndroidResource Include="Resources\drawable\rent_proof_icon.png" />
+    <AndroidResource Include="Resources\layout\my_reviews_screen.axml" />
+    <AndroidResource Include="Resources\drawable\ic_action_discard.png" />
+    <AndroidResource Include="Resources\drawable\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\values\themes.xml" />
+    <AndroidResource Include="Resources\layout\recycler_report_screen.axml" />
+    <AndroidResource Include="Resources\menu\add_and_remove_bar.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_help.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_refresh.png" />
+    <AndroidResource Include="Resources\menu\main_action_bar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\layout\ListControl_ChildItem.axml" />
+    <AndroidResource Include="Resources\layout\ListControl_Group.axml" />
+    <AndroidResource Include="Resources\drawable\Picard.jpg" />
+    <AndroidResource Include="Resources\drawable\sampleEsperian.png" />
+    <AndroidResource Include="Resources\drawable\denisAngelList" />
+    <AndroidResource Include="Resources\drawable\ericAngelList" />
+    <AndroidResource Include="Resources\layout\BackgroundCheck_Row.axml" />
+    <AndroidResource Include="Resources\layout\BackgroundCheck_Profile.axml" />
+    <AndroidResource Include="Resources\layout\SignUp_Pop_Up.axml" />
+    <AndroidResource Include="Resources\layout\Main_Menu.axml" />
+    <AndroidResource Include="Resources\layout\My_BackgroundReports.axml" />
+    <AndroidResource Include="Resources\layout\BackgroundCheck_ProfileCard.axml" />
+    <AndroidResource Include="Resources\layout\report_row.NOTUSINGaxml" />
+    <AndroidResource Include="Resources\layout\row_contactNOTUSING.axml" />
+    <AndroidResource Include="Resources\layout\row_reportNOTUSING.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Submit_Survey.axml" />
+    <AndroidResource Include="Resources\layout\Tenant_Search.axml" />
+    <AndroidResource Include="Resources\layout\Query_Payment.axml" />
+    <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\layout\Launch.axml" />
+    <AndroidResource Include="Resources\layout\Cancel_PopUp.axml" />
+    <AndroidResource Include="Resources\layout\Review_withPicandLease.xml" />
+    <AndroidResource Include="Resources\drawable\lease190x150.png" />
+    <AndroidResource Include="Resources\layout\Accordion_SampleReportNOTUSING.axml" />
+    <AndroidResource Include="Resources\layout\Support_PopUp.axml" />
+    <AndroidResource Include="Resources\layout\Tenant_Search2.axml" />
+    <AndroidResource Include="Resources\layout\Tenant_Search3.axml" />
+    <AndroidResource Include="Resources\drawable\stats2.png" />
+    <AndroidResource Include="Resources\drawable\stats3.png" />
+    <AndroidResource Include="Resources\drawable\stats.png" />
+    <AndroidResource Include="Resources\layout\Purchase_Confirmation.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.1.4.3.6376\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.3.6376\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <ItemGroup>
+    <Folder Include="Resources\drawable-hdpi\New Folder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportv7appcompat">
+      <Version>22.2.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>
